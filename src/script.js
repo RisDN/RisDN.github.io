@@ -9,12 +9,14 @@ var megadottmennyiseg = 0
 
 gomb.addEventListener('click', function() {
     let megadottszoveg = szovegdoboz.value
+    let rejtett = document.getElementById('rejtett')
     megadottmennyiseg = parseInt(mennyisegdoboz.value)
     console.log(megadottmennyiseg)
     if (megadottszoveg != '') {
         if (megadottmennyiseg != 0) {
             megadottmennyiseg++
             rejtettkijelzo.innerHTML = ''
+            rejtett.value = ''
             for (let i = 1; i < megadottmennyiseg; i++) {
                 rejtettkijelzo.innerHTML += ` ${i} ${megadottszoveg}`
             }
