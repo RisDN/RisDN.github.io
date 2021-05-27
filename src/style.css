@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff9ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background-color: #fb6376;
+}
+
+.csik {
+    border: black 5px solid;
+}
+
+.beirasok {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+input {
+    border-radius: 3px;
+    border-color: #906278;
+}
+
+button {
+    margin-top: 25px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #906278;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fb6376;
+}
