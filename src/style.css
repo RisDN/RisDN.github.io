@@ -26,6 +26,7 @@ header {
 input {
     border-radius: 3px;
     border-color: #906278;
+    width: auto;
 }
 
 button {
