@@ -14,6 +14,7 @@ gomb.addEventListener('click', function() {
     if (megadottszoveg != '') {
         if (megadottmennyiseg != 0) {
             megadottmennyiseg++
+            rejtettkijelzo.innerHTML = ''
             for (let i = 1; i < megadottmennyiseg; i++) {
                 rejtettkijelzo.innerHTML += ` ${i} ${megadottszoveg}`
             }
