@@ -9,15 +9,16 @@ var megadottmennyiseg = 0
 
 gomb.addEventListener('click', function() {
     let megadottszoveg = szovegdoboz.value
-    megadottmennyiseg = parseInt(mennyisegdoboz.value)
-    console.log(megadottmennyiseg)
+    megadottmennyiseg = mennyisegdoboz.value
     if (megadottszoveg != '') {
-        if (megadottmennyiseg != 0) {
-            megadottmennyiseg++
-            for (let i = 1; i < megadottmennyiseg; i++) {
-                rejtettkijelzo.innerHTML += ` ${i} ${megadottszoveg}`
-            }
-            masolas()
+        if (megadottmennyiseg === parseInt(megadottmennyiseg, 10)) {
+            if (megadottmennyiseg != 0) {
+                megadottmennyiseg++
+                for (let i = 1; i < megadottmennyiseg; i++) {
+                    rejtettkijelzo.innerHTML += ` ${i} ${megadottszoveg}`
+                }
+                masolas()
+            } else { alert('Kérlek mennyiségnek egész számot adj meg!') }
         } else { alert('Kérlek adj meg egy mennyiséget!') }
     } else { alert('Kérlek adj meg egy szöveget!') }
 });
