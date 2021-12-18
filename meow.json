@@ -1,7 +1,6 @@
-{ 
-  "termek": [
-  { "nev": "Infó", "szam" : 119, "Emelet": 1},
-  { "nev": "Kémia", "szam" : 208, "Emelet": 2},
-  { "nev": "Előadó", "szam" : 29, "Emelet": 0}
+[
+  {"nev": "Infó", "szam": 119, "Emelet": 1},
+  {"nev": "Kémia", "szam": 208, "Emelet": 2},
+  {"nev": "Előadó", "szam": 29, "Emelet": 0}
 ]
-}
+
