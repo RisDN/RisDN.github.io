@@ -40,4 +40,4 @@ function masolas() {
         alert('Kimásolva!')
     }, 150);
 }
-window.location.href = "https://okereso.hu/szovegszorzo";
+//window.location.href = "https://okereso.hu/szovegszorzo";
