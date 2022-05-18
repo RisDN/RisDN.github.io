@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok szövegszorzó</title>
+</head>
+
+<body>
+    <header>
+        <h2>TikTok szövegszorzó</h2>
+    </header>
+    <div class="csik"></div>
+    <div class="teljes">
+        <h4 style="text-align: center;">Írj be egy szöveget, illetve egy mennyiséget<br> majd kattints a Generálás gombra</h4>
+        <div class="beirasok">
+            <div class="beiras">
+                <input type="text" id="szoveg" placeholder="Szöveg">
+                <input type="number" id="mennyiseg" min="1" max="1000" placeholder="Mennyiség">
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="feltoltes">Generálás</button>
+        </div>
+    </div>
+    <footer>
+        <div class="csik"></div>
+        <h4 style="text-align: center;">Készítette: @risdn</h4>
+    </footer>
+
+
+    <div style="margin-left: 8px;">
+        <p id="rejtettkijelzo"></p>
+    </div>
+    <input style="display: none;" type="text" id="rejtett">
+</body>
+
+
+</html>

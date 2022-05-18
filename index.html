@@ -2,42 +2,58 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok szövegszorzó</title>
+    <title>Te voltál már?</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h2>TikTok szövegszorzó</h2>
-    </header>
-    <div class="csik"></div>
-    <div class="teljes">
-        <h4 style="text-align: center;">Írj be egy szöveget, illetve egy mennyiséget<br> majd kattints a Generálás gombra</h4>
-        <div class="beirasok">
-            <div class="beiras">
-                <input type="text" id="szoveg" placeholder="Szöveg">
-                <input type="number" id="mennyiseg" min="1" max="1000" placeholder="Mennyiség">
-            </div>
-        </div>
-
-        <div style="text-align: center;">
-            <button id="feltoltes">Generálás</button>
-        </div>
+    <div class="container-lg align-items-center">
+        <p class="text-center font-weight-bold">
+            <button id="hol" class="btn btn-success btn-lg text-weight-bold">Hol? <img src="kep.png" height="100" width="100%" alt=""> </button>
+        </p>
     </div>
-    <footer>
-        <div class="csik"></div>
-        <h4 style="text-align: center;">Készítette: @risdn</h4>
-    </footer>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Source+Sans+3:wght@300;400&display=swap');
+        body {
+            background: #8360c3;
+            background: -webkit-linear-gradient(to right, #8360c3, #2ebf91);
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        
+        div {
+            margin-top: 15%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            div {
+                margin-top: 45%;
+            }
+        }
+    </style>
+    <script>
+        const hol = document.querySelector('#hol')
+        let state = true
+        hol.addEventListener('click', () => {
+            if (state) {
+                hol.innerHTML = `don <img src="hold.png" height="100" width="100%" alt=""> `
+                setTimeout(() => {
+                    state = false
+                }, 100)
 
-
-    <div style="margin-left: 8px;">
-        <p id="rejtettkijelzo"></p>
-    </div>
-    <input style="display: none;" type="text" id="rejtett">
+            } else {
+                hol.innerHTML = `Hol? <img src="kep.png" height="100" width="100%" alt=""> `
+                setTimeout(() => {
+                    state = true
+                }, 100)
+            }
+        })
+    </script>
 </body>
-
 
 </html>
