@@ -7,5 +7,6 @@ const lehetosegek = [
     "yagban",
     "okausztban",
     "térben",
-    "dfogyatkozásban"
+    "dfogyatkozásban",
+    "A KURVA ANYÁDBAXDDDDDDDD"
 ]
