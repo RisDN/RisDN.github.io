@@ -13,10 +13,10 @@
 <body>
     <div class="container-lg align-items-center">
         <p class="text-center font-weight-bold">
-            <button id="hol" class="btn btn-success btn-lg text-weight-bold">Hol? <img src="kep.png" height="100" width="100%" alt=""> </button>
+            <button id="hol" class="btn btn-success btn-lg text-weight-bold">Hol? <img src="imgs/kep.png" height="100" width="100%" alt=""> </button>
         </p>
     </div>
-    <img style="opacity: 0;" src="kep.png" height="100" width="100%" alt="">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Source+Sans+3:wght@300;400&display=swap');
         body {
@@ -27,6 +27,7 @@
             font-family: 'Source Sans 3', sans-serif;
         }
         
+
         div {
             margin-top: 15%;
         }
@@ -37,24 +38,8 @@
             }
         }
     </style>
-    <script>
-        const hol = document.querySelector('#hol')
-        let state = true
-        hol.addEventListener('click', () => {
-            if (state) {
-                hol.innerHTML = `don <img src="hold.png" height="100" width="100%" alt=""> `
-                setTimeout(() => {
-                    state = false
-                }, 100)
-
-            } else {
-                hol.innerHTML = `Hol? <img src="kep.png" height="100" width="100%" alt=""> `
-                setTimeout(() => {
-                    state = true
-                }, 100)
-            }
-        })
-    </script>
+    <script src="lehetosegek.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
